@@ -1,1 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* CSS code for the style and layout of the web page */
+    body {
+      background-color: black;
+      color: limegreen;
+      font-family: "Courier New", monospace;
+      overflow: hidden;
+     
+    }
+
+    .navbar {
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+  /* Set background color */
+  height: 60px; /* Set height */
+}
+
+.nav-list {
+  display: flex; /* Use flexbox layout */
+  list-style-type: none; /* Remove bullets */
+  margin: 0; /* Remove margins */
+  padding: 0; /* Remove padding */
+}
+
+.nav-item {
+  margin: 0 10px; /* Add some space between items */
+}
+
+.nav-link {
+  display: block; /* Make links fill the space */
+  padding: 10px; /* Add some padding */
+  color: limegreen; /* Set text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.nav-link:hover {
+  background-color: limegreen; /* Set background color on hover */
+  color: black; /* Set text color on hover */
+}
+
+    @font-face {
+  font-family: "Matrix"; /* Define a name for the font */
+  src: url("matrix.ttf"); /* Link to the font file */
+}
+
+/* Use the Matrix font for all elements */
+* {
+  font-family: "Matrix";
+}
+
+
+    h1 {
+      text-align: center;
+      font-size: 4em;
+      margin-top: 20px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: limegreen;
+      color: black;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    .rain {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    .rain span {
+      position: absolute;
+      top: -50px;
+      font-size: 1em;
+      color: limegreen;
+      animation: fall 10s linear infinite;
+    }
+
+    .rain span:nth-child(2) {
+      left: 10%;
+      font-size: 1.2em;
+      animation-duration: 8s;
+    }
+
+    .rain span:nth-child(3) {
+      left: 20%;
+      font-size: 0.8em;
+      animation-duration: 12s;
+    }
+
+    .social-media {
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */ /* Set background color */
+  height: 60px; /* Set height */
+}
+
+.social-link {
+  display: block; /* Make links fill the space */
+  margin: 0 10px; /* Add some space between links */
+  color: limegreen;
+}
+
+.social-link img {
+  width: 60px; /* Set icon size */
+}
+
+    .rain span:nth-child(4) {
+      left: 30%;
+      font-size: 1.4em;
+      animation-duration: 6s;
+    }
+
+    .rain span:nth-child(5) {
+      left: 40%;
+      font-size: 1em;
+      animation-duration: 10s;
+    }
+
+    .rain span:nth-child(6) {
+      left: 50%;
+      font-size: 0.6em;
+      animation-duration: 14s;
+    }
+
+    .rain span:nth-child(7) {
+      left: 60%;
+      font-size: 1.6em;
+      animation-duration: 4s;
+    }
+
+    .rain span:nth-child(8) {
+      left: 70%;
+      font-size: 0.9em;
+      animation-duration: 11s;
+    }
+
+    .rain span:nth-child(9) {
+      left: 80%;
+      font-size: 1.3em;
+      animation-duration: 7s;
+    }
+
+    .rain span:nth-child(10) {
+     left:90%;
+     font-size:0.7em;
+     animation-duration:13s;
+   }
+   @keyframes fall{
+     from{
+       top:-50px
+     }
+     to{
+       top:100%;     
+    }
+    
+   }
+ </style>
+</head>
+<body>
+<h1>ANTOS</h1>
+<p id="os">Your OS is:</p>
+<button id="download">Download ANTOS</button>
+<div class="description">
+    <h2>What is My OS?</h2>
+    <p>ANTOS is a revolutionary operating system that lets you do amazing things with your computer. It is fast, secure, and easy to use. It has a black and withe interface, It also supports multiple languages,ANTOS is compatible with most hardware and software, and it can run on any device. Whether you need to work, play, or create, ANTOS is the perfect choice for you.</p>
+  </div>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="https:\\github.com" class="nav-link">GitHub</a></li>
+    </ul>
+  </nav>
+<!-- HTML code for adding more span elements to the rain animation -->
+<div class="rain">
+  <span>010101001010101010101010101010101010101010101010101010101010101010101010101010101010101010101010</span>
+  <span>111000111000111000111000111000111000111000111000111000111000111000111000111000111</span>
+  <span>001100110011001100110011001100110011001100110011001100110011001100110011001100110</span>
+  <span>100110011001100110011001100110011001100110011001100110011001100110011001100110011</span>
+  <span>101010101010101010101010101010101010101010101010101010101010101010101010101010101</span>
+  <span>000111000111000111000111000111000111000111000111000111000111000111000111000111000</span>
+  <span>110011001100110011001100110011001100110011001100110011001100110011001100110011001</span>
+  <span>011001100110011001100110011001100110011001100110011001100110011001100110011001100</span>
+  <span>01011010010110100101101001011010010110100101101001011010010110100101101001011010</span>
+  <span>00100100010010001001000100100010010001001000100100010010001001000100100010010001</span>
+  <!-- Add two more span elements with different numbers -->
+  <span>1111111111111111111111111111111111111111111111111111111111111111</span>
+  <span>00000000000000000000000000000000000000000000000000</span>
+</div>
+<div class="social-media">
+  <a href="#" class="social-link"><img src="facebook.png" alt="Facebook"></a>
+  <a href="#" class="social-link"><img src="tiktok.png" alt="tiktok"></a>
+  <a href="#" class="social-link"><img src="instagram.png" alt="Instagram"></a>
+</div>
+
+<script>
+
+var osName = "Unknown OS";
+if (navigator.appVersion.indexOf("Win") != -1) osName = "Windows";
+if (navigator.appVersion.indexOf("Mac") != -1) osName = "MacOS";
+if (navigator.appVersion.indexOf("X11") != -1) osName = "UNIX";
+if (navigator.appVersion.indexOf("Linux") != -1) osName = "Linux";
+
+document.getElementById("os").innerHTML += osName;
+
+document.getElementById("download").addEventListener("click", function() {
+  var link = document.createElement("a");
+  link.href = "my-os.zip";
+  link.download = "my-os.zip";
+  link.click();
+});
+</script>
 
